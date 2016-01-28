@@ -1,6 +1,18 @@
 Basic AIR native extension to SteamWorks API
 ============================================
 
+What's new
+----------
+year 2016... 4 years after initial work... I need update to have it running with the current AIR which is in version 20 now.
+As I'm not using Flash Builder, which is extremely buggy, I created FlashDevelop project for the Flash part process (FRESteamWorksLib_FD).. but I'm keeping the old FB project (FRESteamWorksLib) there.
+
+Current problem
+---------------
+unfortunately the current version is not working on MacOS - the new AIR is only for architecture x86-64 and Steam is providing only osx32 library of the api... I'm not sure if it could not be the problem.
+
+Old notes
+----------
+
 It's using appId 480, which is example application from the Steamworks SDK. Somehow is not possible to write to cloud with this appId, but it's working with our real one.
 It's everything what we need at this moment, but there are more functions to play with in the SteamWorks SDK. I'm not sure how legal it is to include the Steam libs and headers so these are not included. You can get them at this web https://partner.steamgames.com
 
