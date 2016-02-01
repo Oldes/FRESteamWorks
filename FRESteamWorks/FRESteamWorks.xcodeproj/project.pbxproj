@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1214331015298AAF003FF426 /* FRESteamWorks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1214330F15298AAF003FF426 /* FRESteamWorks.cpp */; };
-		1214331715298BD2003FF426 /* Adobe AIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1214331615298BD2003FF426 /* Adobe AIR.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		40D9B4EE1C59207A00012D02 /* Adobe AIR_64 in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D9B4ED1C59207A00012D02 /* Adobe AIR_64 */; };
-		40D9B4F01C5923C900012D02 /* libsteam_api.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D9B4EF1C5923C900012D02 /* libsteam_api.dylib */; };
+		405554CF1C6022730059AD40 /* Adobe AIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405554CE1C6022730059AD40 /* Adobe AIR.framework */; };
+		405554D11C6022A80059AD40 /* Adobe AIR_64 in Frameworks */ = {isa = PBXBuildFile; fileRef = 405554D01C6022A80059AD40 /* Adobe AIR_64 */; };
+		405554D31C6022CE0059AD40 /* libsteam_api.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 405554D21C6022CE0059AD40 /* libsteam_api.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,9 +20,9 @@
 		1214330615298AAF003FF426 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1214330E15298AAF003FF426 /* FRESteamWorks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRESteamWorks.h; sourceTree = "<group>"; };
 		1214330F15298AAF003FF426 /* FRESteamWorks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = FRESteamWorks.cpp; sourceTree = "<group>"; };
-		1214331615298BD2003FF426 /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "../../../../Users/oldes/Library/Developer/SDKs/AIRSDK_Compiler/runtimes/air-captive/mac/Adobe AIR.framework"; sourceTree = DEVELOPER_DIR; };
-		40D9B4ED1C59207A00012D02 /* Adobe AIR_64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "Adobe AIR_64"; path = "../../../Library/Developer/SDKs/AIRSDK_Compiler/runtimes/air-captive/mac/Adobe AIR.framework/Versions/1.0/Adobe AIR_64"; sourceTree = "<group>"; };
-		40D9B4EF1C5923C900012D02 /* libsteam_api.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsteam_api.dylib; path = ../../../../Library/Developer/SDKs/SteamWorks_135a/redistributable_bin/osx32/libsteam_api.dylib; sourceTree = "<group>"; };
+		405554CE1C6022730059AD40 /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "SDKs/AIRSDK_Compiler/runtimes/air/mac/Adobe AIR.framework"; sourceTree = DEVELOPER_DIR; };
+		405554D01C6022A80059AD40 /* Adobe AIR_64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "Adobe AIR_64"; path = "SDKs/AIRSDK_Compiler/runtimes/air/mac/Adobe AIR.framework/Versions/1.0/Adobe AIR_64"; sourceTree = DEVELOPER_DIR; };
+		405554D21C6022CE0059AD40 /* libsteam_api.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsteam_api.dylib; path = SDKs/SteamWorks_135a/redistributable_bin/osx32/libsteam_api.dylib; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,9 +30,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40D9B4F01C5923C900012D02 /* libsteam_api.dylib in Frameworks */,
-				40D9B4EE1C59207A00012D02 /* Adobe AIR_64 in Frameworks */,
-				1214331715298BD2003FF426 /* Adobe AIR.framework in Frameworks */,
+				405554D31C6022CE0059AD40 /* libsteam_api.dylib in Frameworks */,
+				405554CF1C6022730059AD40 /* Adobe AIR.framework in Frameworks */,
+				405554D11C6022A80059AD40 /* Adobe AIR_64 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +59,8 @@
 		1214330015298AAF003FF426 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				40D9B4ED1C59207A00012D02 /* Adobe AIR_64 */,
-				1214331615298BD2003FF426 /* Adobe AIR.framework */,
+				405554D01C6022A80059AD40 /* Adobe AIR_64 */,
+				405554CE1C6022730059AD40 /* Adobe AIR.framework */,
 				1214330315298AAF003FF426 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -79,7 +79,7 @@
 		1214330715298AAF003FF426 /* FRESteamWorks */ = {
 			isa = PBXGroup;
 			children = (
-				40D9B4EF1C5923C900012D02 /* libsteam_api.dylib */,
+				405554D21C6022CE0059AD40 /* libsteam_api.dylib */,
 				1214330E15298AAF003FF426 /* FRESteamWorks.h */,
 				1214330F15298AAF003FF426 /* FRESteamWorks.cpp */,
 				1214330815298AAF003FF426 /* Supporting Files */,
@@ -189,7 +189,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "~/Library/Developer/SDKs/AIRSDK_Compiler/runtimes/air/mac";
+				FRAMEWORK_SEARCH_PATHS = /Developer/SDKs/AIRSDK_Compiler/runtimes/air/mac;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -210,14 +210,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"~/Library/Developer/SDKs/SteamWorks_135a/public/steam",
-					"~/Library/Developer/SDKs/AIRSDK_Compiler/include",
+					/Developer/SDKs/SteamWorks_135a/public/steam,
+					/Developer/SDKs/AIRSDK_Compiler/include,
 				);
 				INFOPLIST_FILE = "FRESteamWorks/FRESteamWorks-Info.plist";
 				INSTALL_PATH = "@rpath";
 				LD_DYLIB_INSTALL_NAME = /Library/Frameworks/FRESteamWorks.framework/Version/A/FRESteamWorks;
-				LD_RUNPATH_SEARCH_PATHS = "~/Library/Developer/SDKs/AIRSDK_Compiler/runtimes/air/mac/ \"@executable_path/../Frameworks\" \"/Library/Frameworks\"";
-				LIBRARY_SEARCH_PATHS = "~/Library/Developer/SDKs/SteamWorks_135a/redistributable_bin/osx32";
+				LD_RUNPATH_SEARCH_PATHS = "/Developer/SDKs/AIRSDK_Compiler/runtimes/air/mac/ \"@executable_path/../Frameworks\" \"/Library/Frameworks\"";
+				LIBRARY_SEARCH_PATHS = /Developer/SDKs/SteamWorks_135a/redistributable_bin/osx32;
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				ONLY_ACTIVE_ARCH = NO;
@@ -249,7 +249,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "~/Library/Developer/SDKs/AIRSDK_Compiler/runtimes/air/mac";
+				FRAMEWORK_SEARCH_PATHS = /Developer/SDKs/AIRSDK_Compiler/runtimes/air/mac;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -263,14 +263,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"~/Library/Developer/SDKs/SteamWorks_135a/public/steam",
-					"~/Library/Developer/SDKs/AIRSDK_Compiler/include",
+					/Developer/SDKs/SteamWorks_135a/public/steam,
+					/Developer/SDKs/AIRSDK_Compiler/include,
 				);
 				INFOPLIST_FILE = "FRESteamWorks/FRESteamWorks-Info.plist";
 				INSTALL_PATH = "@rpath";
 				LD_DYLIB_INSTALL_NAME = /Library/Frameworks/FRESteamWorks.framework/Version/A/FRESteamWorks;
-				LD_RUNPATH_SEARCH_PATHS = "~/Library/Developer/SDKs/AIRSDK_Compiler/runtimes/air/mac/ \"@executable_path/../Frameworks\" \"/Library/Frameworks\"";
-				LIBRARY_SEARCH_PATHS = "~/Library/Developer/SDKs/SteamWorks_135a/redistributable_bin/osx32";
+				LD_RUNPATH_SEARCH_PATHS = "/Developer/SDKs/AIRSDK_Compiler/runtimes/air/mac/ \"@executable_path/../Frameworks\" \"/Library/Frameworks\"";
+				LIBRARY_SEARCH_PATHS = /Developer/SDKs/SteamWorks_135a/redistributable_bin/osx32;
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRIVATE_HEADERS_FOLDER_PATH = FRESteamWorks.framework/Versions/A/PrivateHeaders;
@@ -292,7 +292,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"~/SDKs/AIRSDK_Compiler/runtimes/air/mac\"",
+					"$(DEVELOPER_DIR)/SDKs/AIRSDK_Compiler/runtimes/air/mac",
+					"$(DEVELOPER_DIR)/SDKs/AIRSDK_Compiler/runtimes/air/mac",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -300,10 +301,9 @@
 				INFOPLIST_FILE = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"~/SDKs/SteamWorks_135a/redistributable_bin/osx32",
-					/Users/oldes/SDKs/AIRSDK_Compiler/runtimes/air/mac/Adobe,
+					"$(DEVELOPER_DIR)/SDKs/SteamWorks_135a/redistributable_bin/osx32",
 					AIR.framework/Versions/1.0,
-					/Users/oldes/SDKs/SteamWorks_135a/redistributable_bin/osx32,
+					"$(DEVELOPER_DIR)/SDKs/SteamWorks_135a/redistributable_bin/osx32",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
@@ -318,7 +318,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"~/SDKs/AIRSDK_Compiler/runtimes/air/mac\"",
+					"$(DEVELOPER_DIR)/SDKs/AIRSDK_Compiler/runtimes/air/mac",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -326,10 +326,7 @@
 				INFOPLIST_FILE = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"~/SDKs/SteamWorks_135a/redistributable_bin/osx32",
-					/Users/oldes/SDKs/AIRSDK_Compiler/runtimes/air/mac/Adobe,
-					AIR.framework/Versions/1.0,
-					/Users/oldes/SDKs/SteamWorks_135a/redistributable_bin/osx32,
+					"$(DEVELOPER_DIR)/SDKs/SteamWorks_135a/redistributable_bin/osx32",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
