@@ -2,7 +2,7 @@
 //  FRESteamWorks.h
 //  FRESteamWorks
 //
-//  Created by David ´Oldes´ Oliva on 3/29/12.
+//  Created by David ï¿½Oldesï¿½ Oliva on 3/29/12.
 //  Copyright (c) 2012 Amanita Design. All rights reserved.
 //
 #if defined(WIN32)
