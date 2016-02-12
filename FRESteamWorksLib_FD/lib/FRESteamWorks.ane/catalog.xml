@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+    <versions>
+        <swc version="1.2"/>
+        <compiler name="ActionScript Compiler" version="2.0.0" build="354174"/>
+    </versions>
+    <features>
+        <feature-script-deps/>
+    </features>
+    <libraries>
+        <library path="library.swf">
+            <script name="com/amanitadesign/steam/FRESteamWorks" mod="1453968104192">
+                <def id="com.amanitadesign.steam:FRESteamWorks"/>
+                <dep id="Boolean" type="s"/>
+                <dep id="Error" type="e"/>
+                <dep id="Function" type="s"/>
+                <dep id="Number" type="e"/>
+                <dep id="String" type="s"/>
+                <dep id="com.amanitadesign.steam:SteamConstants" type="e"/>
+                <dep id="com.amanitadesign.steam:SteamEvent" type="e"/>
+                <dep id="flash.events:EventDispatcher" type="i"/>
+                <dep id="flash.events:IEventDispatcher" type="s"/>
+                <dep id="flash.events:StatusEvent" type="s"/>
+                <dep id="flash.external:ExtensionContext" type="s"/>
+                <dep id="flash.utils:ByteArray" type="s"/>
+                <dep id="flash.utils:clearInterval" type="e"/>
+                <dep id="flash.utils:setInterval" type="e"/>
+                <dep id="int" type="s"/>
+                <dep id="trace" type="e"/>
+            </script>
+            <script name="com/amanitadesign/steam/SteamConstants" mod="1450635742438">
+                <def id="com.amanitadesign.steam:SteamConstants"/>
+                <dep id="Object" type="i"/>
+                <dep id="int" type="s"/>
+            </script>
+            <script name="com/amanitadesign/steam/SteamEvent" mod="1450635742439">
+                <def id="com.amanitadesign.steam:SteamEvent"/>
+                <dep id="Boolean" type="s"/>
+                <dep id="String" type="s"/>
+                <dep id="flash.events:Event" type="i"/>
+                <dep id="int" type="s"/>
+            </script>
+            <digests>
+                <digest type="SHA-256" signed="false" value="fca5ceec422cdd1574f147beb688a15814d7ccd5f059c6ace19b40dc8696d218"/>
+            </digests>
+        </library>
+    </libraries>
+</swc>
