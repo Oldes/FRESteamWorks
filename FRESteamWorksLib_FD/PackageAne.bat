@@ -1,8 +1,8 @@
 @echo off
 set PAUSE_ERRORS=1
 
-set AIR_SDK=C:\SDKs\AIR20
-set SWF_VERSION=30
+set AIR_SDK=C:\SDKs\AIR21
+set SWF_VERSION=31
 set PATH=%PATH%;%AIR_SDK%\bin
 
 echo SDK: %AIR_SDK%
@@ -32,6 +32,11 @@ call adt -package -target ane ../ane/FRESteamWorks.ane ^
 
 del library.swf
 del catalog.xml
+
+cd ../lib
+
+del -R -f *
+unzip -o ../ane/FRESteamWorks.ane -d ./FRESteamWorks.ane/
 
 cd ..
 pause
