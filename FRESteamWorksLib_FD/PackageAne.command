@@ -21,4 +21,9 @@ unzip -o FRESteamWorks.swc
 rm library.swf
 rm catalog.xml
 
+cd ../lib
+rm -Rf *
+
+unzip -o ../ane/FRESteamWorks.ane -d ./FRESteamWorks.ane/
+
 cd ..
