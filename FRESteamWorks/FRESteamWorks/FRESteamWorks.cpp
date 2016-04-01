@@ -429,27 +429,27 @@ extern "C" {
     void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, 
                             uint32_t* numFunctions, const FRENamedFunction** functions) {
         static FRENamedFunction extensionFunctions[] = {
-            { (const uint8_t*) "AIRSteam_Init",NULL, &AIRSteam_Init},
-            { (const uint8_t*)  "AIRSteam_RequestStats",NULL,&AIRSteam_RequestStats},
-            { (const uint8_t*)  "AIRSteam_SetAchievement",NULL,&AIRSteam_SetAchievement},
-            { (const uint8_t*)  "AIRSteam_ClearAchievement",NULL,&AIRSteam_ClearAchievement},
-            { (const uint8_t*)  "AIRSteam_IsAchievement",NULL,&AIRSteam_IsAchievement},
-            { (const uint8_t*)  "AIRSteam_GetStatInt",NULL,&AIRSteam_GetStatInt},
-            { (const uint8_t*)  "AIRSteam_GetStatFloat",NULL,&AIRSteam_GetStatFloat},
-            { (const uint8_t*)  "AIRSteam_SetStatInt",NULL,&AIRSteam_SetStatInt},
-            { (const uint8_t*)  "AIRSteam_SetStatFloat",NULL,&AIRSteam_SetStatFloat},
-            { (const uint8_t*)  "AIRSteam_StoreStats",NULL,&AIRSteam_StoreStats},
-            { (const uint8_t*)  "AIRSteam_RunCallbacks",NULL,&AIRSteam_RunCallbacks},
-            { (const uint8_t*)  "AIRSteam_ResetAllStats",NULL,&AIRSteam_ResetAllStats},
+            { (const uint8_t*) "AIRSteam_Init",NULL, AIRSteam_Init},
+            { (const uint8_t*)  "AIRSteam_RequestStats",NULL,AIRSteam_RequestStats},
+            { (const uint8_t*)  "AIRSteam_SetAchievement",NULL,AIRSteam_SetAchievement},
+            { (const uint8_t*)  "AIRSteam_ClearAchievement",NULL,AIRSteam_ClearAchievement},
+            { (const uint8_t*)  "AIRSteam_IsAchievement",NULL,AIRSteam_IsAchievement},
+            { (const uint8_t*)  "AIRSteam_GetStatInt",NULL,AIRSteam_GetStatInt},
+            { (const uint8_t*)  "AIRSteam_GetStatFloat",NULL,AIRSteam_GetStatFloat},
+            { (const uint8_t*)  "AIRSteam_SetStatInt",NULL,AIRSteam_SetStatInt},
+            { (const uint8_t*)  "AIRSteam_SetStatFloat",NULL,AIRSteam_SetStatFloat},
+            { (const uint8_t*)  "AIRSteam_StoreStats",NULL,AIRSteam_StoreStats},
+            { (const uint8_t*)  "AIRSteam_RunCallbacks",NULL,AIRSteam_RunCallbacks},
+            { (const uint8_t*)  "AIRSteam_ResetAllStats",NULL,AIRSteam_ResetAllStats},
             //SteamRemoteStorage...
-            { (const uint8_t*)  "AIRSteam_GetFileCount",NULL,&AIRSteam_GetFileCount},
-            { (const uint8_t*)  "AIRSteam_GetFileSize",NULL,&AIRSteam_GetFileSize},
-            { (const uint8_t*)  "AIRSteam_FileExists",NULL,&AIRSteam_FileExists},
-            { (const uint8_t*) "AIRSteam_FileWrite",NULL,&AIRSteam_FileWrite},
-            { (const uint8_t*)  "AIRSteam_FileRead",NULL,&AIRSteam_FileRead},
-            { (const uint8_t*)  "AIRSteam_FileDelete",NULL,&AIRSteam_FileDelete},
-            { (const uint8_t*) "AIRSteam_IsCloudEnabledForApp",NULL,&AIRSteam_IsCloudEnabledForApp},
-            { (const uint8_t*) "AIRSteam_SetCloudEnabledForApp",NULL,&AIRSteam_SetCloudEnabledForApp}
+            { (const uint8_t*)  "AIRSteam_GetFileCount",NULL,AIRSteam_GetFileCount},
+            { (const uint8_t*)  "AIRSteam_GetFileSize",NULL,AIRSteam_GetFileSize},
+            { (const uint8_t*)  "AIRSteam_FileExists",NULL,AIRSteam_FileExists},
+            { (const uint8_t*) "AIRSteam_FileWrite",NULL,AIRSteam_FileWrite},
+            { (const uint8_t*)  "AIRSteam_FileRead",NULL,AIRSteam_FileRead},
+            { (const uint8_t*)  "AIRSteam_FileDelete",NULL,AIRSteam_FileDelete},
+            { (const uint8_t*) "AIRSteam_IsCloudEnabledForApp",NULL,AIRSteam_IsCloudEnabledForApp},
+            { (const uint8_t*) "AIRSteam_SetCloudEnabledForApp",NULL,AIRSteam_SetCloudEnabledForApp}
         };
         
         *numFunctions = sizeof(extensionFunctions) / sizeof(FRENamedFunction);

@@ -1,6 +1,0 @@
-framework module FRESteamWorks {
-  umbrella header "FRESteamWorks.h"
-
-  export *
-  module * { export * }
-}
