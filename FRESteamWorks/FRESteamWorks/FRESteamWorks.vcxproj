@@ -44,6 +44,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)build\$(Configuration)\</OutDir>
+    <IncludePath>C:\SDKs\SteamWorks_135\public\steam;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -70,21 +71,21 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;AIRICUEXTENSION_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\AirSDK\air_3.2\include;..\..\steamworks_sdk_118\sdk\public\steam;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>c:\SDKs\AIR21\include\;c:\SDKs\SteamWorks_136\public\steam\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>c:\AirSDK\air_3.2\lib\win;..\..\steamworks_sdk_118\sdk\redistributable_bin;..\..\steamworks_sdk_118\sdk\public\steam\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\SDKs\AIR21\lib\Win;C:\SDKs\SteamWorks_136\redistributable_bin;C:\SDKs\SteamWorks_135\public\steam\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>steam_api.lib;FlashRuntimeExtensions.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
     </ProjectReference>
     <PostBuildEvent>
-      <Command>xcopy "$(TargetPath)" "$(SolutionDir)..\FRESteamWorksLib\bin\" /Y &amp;&amp;  cd "$(SolutionDir)..\FRESteamWorksLib\bin\" &amp;&amp; echo Compiling ANE... &amp;&amp; "$(SolutionDir)..\FRESteamWorksLib\bin\compileANE.bat" &amp;&amp; echo done</Command>
+      <Command>xcopy "$(TargetPath)" "$(SolutionDir)..\FRESteamWorksLib_FD\extlib\" /Y &amp;&amp;  cd "$(SolutionDir)..\" &amp;&amp; PackageAne-on-Windows.bat &amp;&amp; echo done</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

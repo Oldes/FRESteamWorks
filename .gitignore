@@ -1,5 +1,7 @@
-steamworks_sdk_118
 FRESteamWorksTest/bin-debug/FRESteamWorksTest
 FRESteamWorks/FRESteamWorks.suo
 FRESteamWorks/FRESteamWorks/Release
 FRESteamWorks/FRESteamWorks/Debug
+FRESteamWorks/FRESteamWorks.xcodeproj/project.xcworkspace/
+FRESteamWorks/build
+FRESteamWorksTest_FD/bin/FRESteamWorksTest.app/*

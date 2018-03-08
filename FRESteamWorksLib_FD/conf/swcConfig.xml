@@ -1,0 +1,12 @@
+<flex-config> 
+    <compiler> 
+        <source-path> 
+			 <path-element>..\src</path-element>
+             <path-element>C:\Program Files (x86)\FlashDevelop\Library\AS3\classes</path-element>
+        </source-path> 
+		
+    </compiler> 
+	<include-sources includes="**/*">
+    	<path-element>..\src</path-element>
+    </include-sources>
+</flex-config>
